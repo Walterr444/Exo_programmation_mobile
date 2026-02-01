@@ -1,27 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:formation_flutter/res/app_colors.dart';
 
-class ProductHeader extends StatelessWidget {
-  final String imageUrl;
-  final String productName;
-  final String? altName;
-  final String brandName;
+import 'package:formation_flutter/model/product_view_model.dart';
+import 'package:provider/provider.dart';
 
-  const ProductHeader({
-    super.key,
-    required this.imageUrl,
-    required this.productName,
-    this.altName,
-    required this.brandName,
-  });
+class ProductHeader extends StatelessWidget {
+  const ProductHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final product = context.read<ProductViewModel>().product!;
+
     return Stack(
       children: [
         // Image de fond
         Image.network(
-          imageUrl,
+          product.picture!,
           height: 300,
           width: double.infinity,
           fit: BoxFit.cover,
@@ -41,7 +35,7 @@ class ProductHeader extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  productName,
+                  product.name!,
                   style: const TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
@@ -50,13 +44,13 @@ class ProductHeader extends StatelessWidget {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  brandName,
+                  product.brands!.first,
                   style: const TextStyle(fontSize: 18, color: AppColors.grey2),
                 ),
-                if (altName != null) ...[
+                if (product.altName != null) ...[
                   const SizedBox(height: 8),
                   Text(
-                    altName!,
+                    product.altName!,
                     style: const TextStyle(
                       fontSize: 16,
                       color: AppColors.grey3,

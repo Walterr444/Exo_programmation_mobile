@@ -6,13 +6,16 @@ import 'package:formation_flutter/widgets/green_score_widget.dart';
 import 'package:formation_flutter/widgets/nova_score_widget.dart';
 import 'package:formation_flutter/widgets/nutriscore_widget.dart';
 
-class SummaryBanner extends StatelessWidget {
-  final Product product;
+import 'package:formation_flutter/model/product_view_model.dart';
+import 'package:provider/provider.dart';
 
-  const SummaryBanner({super.key, required this.product});
+class SummaryBanner extends StatelessWidget {
+  const SummaryBanner({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final product = context.read<ProductViewModel>().product!;
+
     return Container(
       color: AppColors.grey1.withOpacity(0.5),
       child: Column(
