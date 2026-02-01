@@ -1,0 +1,10 @@
+^C:\USERS\LCOUR\ONEDRIVE - GROUPE INSEEC (POCE)\BUREAU\PROJET_FLUTTER\DART_APPLICATION_1\FLUTTER_COURS2\COURS_ECE_2026\COURS_02\WINDOWS\RUNNER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/lcour/OneDrive - Groupe INSEEC (POCE)/Bureau/Projet_flutter/dart_application_1/flutter_cours2/cours_ece_2026/cours_02/windows" "-BC:/Users/lcour/OneDrive - Groupe INSEEC (POCE)/Bureau/Projet_flutter/dart_application_1/flutter_cours2/cours_ece_2026/cours_02/build/windows/x64" --check-stamp-file "C:/Users/lcour/OneDrive - Groupe INSEEC (POCE)/Bureau/Projet_flutter/dart_application_1/flutter_cours2/cours_ece_2026/cours_02/build/windows/x64/runner/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

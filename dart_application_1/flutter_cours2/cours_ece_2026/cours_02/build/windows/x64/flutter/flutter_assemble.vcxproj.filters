@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lcour\OneDrive - Groupe INSEEC (POCE)\Bureau\Projet_flutter\dart_application_1\flutter_cours2\cours_ece_2026\cours_02\build\windows\x64\CMakeFiles\ddb6a3a8311b1157716568addbe8bf21\flutter_windows.dll.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lcour\OneDrive - Groupe INSEEC (POCE)\Bureau\Projet_flutter\dart_application_1\flutter_cours2\cours_ece_2026\cours_02\build\windows\x64\CMakeFiles\0bd29268fd548f6c5a4646d05d0f425a\flutter_assemble.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lcour\OneDrive - Groupe INSEEC (POCE)\Bureau\Projet_flutter\dart_application_1\flutter_cours2\cours_ece_2026\cours_02\windows\flutter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\lcour\OneDrive - Groupe INSEEC (POCE)\Bureau\Projet_flutter\dart_application_1\flutter_cours2\cours_ece_2026\cours_02\build\windows\x64\flutter\CMakeFiles\flutter_assemble" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{62464F86-0C18-3F0C-8272-D00A0628D470}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
